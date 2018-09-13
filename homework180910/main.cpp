@@ -41,6 +41,6 @@ int main(int argc, char *argv[])
     //https://blog.csdn.net/zhangpiu/article/details/50564064
     //https://zh.cppreference.com/w/cpp/algorithm/sort
     qDebug()<<"排序前："<<values;
-    std::sort(values.rbegin(),values.rend(),qLess<qint8>());
+    std::sort(values.begin(),values.end(),std::greater<qint8>());
     qDebug()<<"排序后："<<values;
 }
